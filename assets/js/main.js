@@ -14,7 +14,6 @@ document.addEventListener("DOMContentLoaded", () => {
         entries.forEach((entry) => {
           const video = entry.target;
           if (entry.isIntersecting) {
-            video.muted = true;
             video.play().catch(() => {});
           } else {
             video.pause();
@@ -24,10 +23,25 @@ document.addEventListener("DOMContentLoaded", () => {
       { threshold: 0.5 }
     );
     autoplayVideos.forEach((video) => {
+      video.muted = true;
       video.preload = "auto";
       video.loop = true;
       video.playsInline = true;
       observer.observe(video);
     });
   }
+
+  document.querySelectorAll(".mute-toggle").forEach((button) => {
+    const video = button.parentElement.querySelector("video");
+    if (!video) return;
+    const sync = () => {
+      button.innerHTML = video.muted ? "&#128263;" : "&#128264;";
+      button.textContent = video.muted ? "\u{1F507}" : "\u{1F50A}";
+    };
+    sync();
+    button.addEventListener("click", () => {
+      video.muted = !video.muted;
+      sync();
+    });
+  });
 });

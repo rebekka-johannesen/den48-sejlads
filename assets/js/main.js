@@ -31,6 +31,17 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  document.querySelectorAll(".video-feature video").forEach((video) => {
+    const tryPlay = () => video.play().catch(() => {});
+    tryPlay();
+    video.addEventListener("loadedmetadata", tryPlay);
+    video.addEventListener("canplay", tryPlay);
+    video.addEventListener("pause", tryPlay);
+    document.addEventListener("visibilitychange", () => {
+      if (!document.hidden) tryPlay();
+    });
+  });
+
   document.querySelectorAll(".mute-toggle").forEach((button) => {
     const video = button.parentElement.querySelector("video");
     if (!video) return;

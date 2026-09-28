@@ -177,6 +177,7 @@ img { max-width: 100%; display: block; }
 
 .hero-content.align-right {
   text-align: right;
+  margin-right: -24px;
 }
 
 .hero-content.align-right h1,
@@ -191,6 +192,7 @@ img { max-width: 100%; display: block; }
 @media (max-width: 700px) {
   .hero-content.align-right {
     text-align: left;
+    margin-right: 0;
   }
   .hero-content.align-right h1,
   .hero-content.align-right p {

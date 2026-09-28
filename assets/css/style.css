@@ -600,6 +600,7 @@ section { padding: 90px 0; }
   height: 100%;
   object-fit: cover;
   display: block;
+  pointer-events: none;
 }
 
 .mute-toggle {

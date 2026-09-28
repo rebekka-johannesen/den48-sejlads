@@ -144,6 +144,7 @@ img { max-width: 100%; display: block; }
   position: relative;
   z-index: 2;
   padding-bottom: 90px;
+  min-width: 0;
 }
 
 .hero h1 {
@@ -175,27 +176,20 @@ img { max-width: 100%; display: block; }
 }
 
 .hero-content.align-right {
-  text-align: right;
-  padding-right: 16px;
+  text-align: left;
+  margin-left: 62%;
+  max-width: 38%;
+  padding-right: 24px;
+  flex-shrink: 0;
 }
 
-.hero-content.align-right h1,
-.hero-content.align-right p {
-  margin-left: auto;
-}
-
-.hero-content.align-right .hero-actions {
-  justify-content: flex-end;
-}
-
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   .hero-content.align-right {
-    text-align: left;
-    padding-right: 24px;
-  }
-  .hero-content.align-right h1,
-  .hero-content.align-right p {
     margin-left: 0;
+    max-width: none;
+    padding-right: 24px;
+    flex-shrink: 1;
+    width: 100%;
   }
   .hero-content.align-right .hero-actions {
     justify-content: flex-start;

@@ -316,6 +316,8 @@ section { padding: 90px 0; }
 .gallery-item {
   position: relative;
   overflow: hidden;
+  display: block;
+  cursor: pointer;
 }
 
 .gallery-item img {

@@ -651,6 +651,7 @@ section { padding: 90px 0; }
 /* ---------- Video embeds ---------- */
 
 .video-wrap {
+  position: relative;
   width: 100%;
   aspect-ratio: 16 / 9;
   margin-top: 40px;

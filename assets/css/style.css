@@ -702,7 +702,7 @@ section { padding: 90px 0; }
   text-transform: uppercase;
   font-size: clamp(3rem, 10vw, 6.5rem);
   color: var(--white);
-  text-shadow: 0 2px 20px rgba(0,0,0,0.4);
+  text-shadow: 0 2px 6px rgba(0,0,0,0.7), 0 8px 34px rgba(0,0,0,0.55);
   white-space: nowrap;
   padding-right: 60px;
 }
@@ -733,7 +733,7 @@ section { padding: 90px 0; }
   background-size: cover;
   background-position: center;
   min-height: 560px;
-  padding: 140px 0 50px;
+  padding: 140px 0 28px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -744,7 +744,7 @@ section { padding: 90px 0; }
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(10,18,30,0.08) 0%, rgba(10,18,30,0.02) 40%, rgba(10,18,30,0.55) 100%);
+  background: linear-gradient(180deg, rgba(10,18,30,0.08) 0%, rgba(10,18,30,0.02) 40%, rgba(10,18,30,0.6) 100%);
 }
 
 .page-hero.with-photo .container {

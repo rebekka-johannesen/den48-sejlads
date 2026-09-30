@@ -713,7 +713,7 @@ section { padding: 90px 0; }
 }
 
 .marquee.on-light .marquee-track span {
-  color: var(--navy);
+  color: var(--red);
   text-shadow: none;
 }
 

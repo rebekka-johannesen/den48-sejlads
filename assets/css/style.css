@@ -630,6 +630,21 @@ section { padding: 90px 0; }
   }
 }
 
+.split-cta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.split-cta-col {
+  padding: 90px clamp(24px, 5vw, 70px);
+}
+
+@media (max-width: 780px) {
+  .split-cta {
+    grid-template-columns: 1fr;
+  }
+}
+
 .ig-strip {
   text-align: center;
   padding: 36px 24px;

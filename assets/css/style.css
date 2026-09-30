@@ -221,6 +221,9 @@ img { max-width: 100%; display: block; }
 .btn-navy { background: var(--navy); color: var(--white); }
 .btn-navy:hover { background: var(--navy-light); }
 
+.btn-outline-dark { border-color: var(--navy); color: var(--navy); }
+.btn-outline-dark:hover { background: var(--navy); color: var(--white); }
+
 .btn-red { background: var(--red); color: var(--white); }
 
 /* ---------- Sections ---------- */
@@ -637,6 +640,17 @@ section { padding: 90px 0; }
 
 .split-cta-col {
   padding: 90px clamp(24px, 5vw, 70px);
+}
+
+.split-cta-col + .split-cta-col {
+  border-left: 1px solid rgba(20, 38, 63, 0.12);
+}
+
+@media (max-width: 780px) {
+  .split-cta-col + .split-cta-col {
+    border-left: none;
+    border-top: 1px solid rgba(20, 38, 63, 0.12);
+  }
 }
 
 @media (max-width: 780px) {

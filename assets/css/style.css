@@ -630,6 +630,33 @@ section { padding: 90px 0; }
   }
 }
 
+.ig-strip {
+  text-align: center;
+  padding: 36px 24px;
+}
+
+.ig-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.85rem;
+  color: var(--navy);
+  transition: color 0.2s ease;
+}
+
+.ig-link:hover {
+  color: var(--red);
+}
+
+.ig-link svg {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;

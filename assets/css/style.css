@@ -648,6 +648,7 @@ section { padding: 90px 0; }
 .ig-strip {
   text-align: center;
   padding: 36px 24px;
+  background: var(--cream);
 }
 
 .ig-link {
